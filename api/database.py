@@ -7,7 +7,7 @@ SQLALCHEMY_DATABASE_URL = "sqlite:///./cinema.db"
 
 
 # création d'un moteur de base de données (engine) qui 
-# établit la connexion avec notre base SQLite(movies.db)
+# établit la connexion avec notre base SQLite(cinema.db)
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False} #gestion du multi threading
 )
