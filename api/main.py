@@ -37,7 +37,7 @@ app = FastAPI(
 def get_db():
     db = SessionLocal()
     try:
-        yield db
+        yield db #Rend la session de base de données disponible pour être utilisée dans un bloc de code
     finally:
         db.close()
 
